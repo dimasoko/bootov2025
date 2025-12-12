@@ -2,7 +2,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AuthForm from '../components/AuthForm';
 
-const Auth = () => {
+const AuthPage = () => {
   return (
     <div>
       <Header />
@@ -12,4 +12,4 @@ const Auth = () => {
   );
 };
 
-export default Auth; 
+export default AuthPage; 

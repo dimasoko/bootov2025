@@ -1,9 +1,9 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import PageName from '../components/Text/PageName';
-import ServiceSect from '../components/Service/ServiceSect';
+import ServiceSect from '../components/Services/ServiceSect';
 
-const Services = ({ isAdmin = false }) => {
+const ServicesPage = ({ isAdmin = false }) => {
   return (
     <>
         <Header />
@@ -14,4 +14,4 @@ const Services = ({ isAdmin = false }) => {
   );
 };
 
-export default Services; 
+export default ServicesPage; 

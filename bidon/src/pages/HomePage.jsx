@@ -1,9 +1,9 @@
 import Header from '../components/Header';
-import Screaming from '../components/HomePage/Screaming';
+import Screaming from '../components/HomePage/BigLogo';
 import Footer from '../components/Footer';
 import MainTitle from '../components/HomePage/MainTitle';
 import FeatureSection from '../components/HomePage/FeatureSection';
-import IWanna from '../components/HomePage/IWanna';
+import IWanna from '../components/HomePage/ShadedButton';
 
 const HomePage = () => {
   return (

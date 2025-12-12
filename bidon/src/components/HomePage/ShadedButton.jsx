@@ -1,7 +1,7 @@
 import React from "react";
-import styles from './IWanna.module.css';
+import styles from './ShadedButton.module.css';
 
-const IWanna = () => {
+const ShadedButton = () => {
   return (
     <div className={styles.iwanna}>
       <a href="/services">я хочу поплавать</a>
@@ -9,4 +9,4 @@ const IWanna = () => {
   );
 };
 
-export default IWanna;
+export default ShadedButton;

@@ -1,13 +1,13 @@
 import HomePage from './pages/HomePage';
 import './App.css';
-import AboutUs from './pages/AboutUs';
-import Rules from './pages/Rules';
-import Contacts from './pages/Contacts';
-import Services from './pages/Services';
-import News from './pages/News';
-import Auth from './pages/Auth';
-import Profile from './pages/Profile';
-import Booking from './pages/Booking';
+import AboutPage from './pages/AboutPage';
+import RulesPage from './pages/RulesPage';
+import ContactsPage from './pages/ContactsPage';
+import ServicesPage from './pages/ServicesPage';
+import NewsPage from './pages/NewsPage';
+import AuthPage from './pages/AuthPage';
+import ProfilePage from './pages/ProfilePage';
+import BookingPage from './pages/BookingPage';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
@@ -40,16 +40,16 @@ function App() {
               <ProfileProvider>
                 <Routes>
                   <Route path="/" element={<HomePage />} />
-                  <Route path="/about" element={<AboutUs />} />
-                  <Route path="/rules" element={<Rules />} />
-                  <Route path="/contacts" element={<Contacts />} />
-                  <Route path="/services" element={<Services />} />
-                  <Route path="/admin/services" element={<Services isAdmin={true} />} />
-                  <Route path="/news" element={<News />} />
-                  <Route path="/admin/news" element={<News isAdmin={true} />} />
-                  <Route path="/auth" element={<Auth />} />
-                  <Route path="/profile" element={<Profile />} />
-                  <Route path="/booking" element={<Booking />} />
+                  <Route path="/about" element={<AboutPage />} />
+                  <Route path="/rules" element={<RulesPage />} />
+                  <Route path="/contacts" element={<ContactsPage />} />
+                  <Route path="/services" element={<ServicesPage />} />
+                  <Route path="/admin/services" element={<ServicesPage isAdmin={true} />} />
+                  <Route path="/news" element={<NewsPage />} />
+                  <Route path="/admin/news" element={<NewsPage isAdmin={true} />} />
+                  <Route path="/auth" element={<AuthPage />} />
+                  <Route path="/profile" element={<ProfilePage />} />
+                  <Route path="/booking" element={<BookingPage />} />
                 </Routes>
                 <ReactQueryDevtools initialIsOpen={false}/>
               </ProfileProvider>

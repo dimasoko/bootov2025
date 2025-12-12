@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import PageName from '../components/Text/PageName';
 import TextBlock from '../components/Text/TextBlock';
 
-const Contacts = () => {
+const ContactsPage = () => {
   return (
     <div>
       <Header />
@@ -23,4 +23,4 @@ const Contacts = () => {
   );
 };
 
-export default Contacts; 
+export default ContactsPage; 

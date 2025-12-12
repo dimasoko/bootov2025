@@ -1,10 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { openServiceForm, closeServiceForm } from '../../store/slices/modalsSlice.js';
 import styles from './ServiceSect.module.css';
-import Service from './Service';
-import { useServices } from './useServices';
-import { useServiceMutations } from './useServiceMutations';
-import ServiceForm from './ServiceForm';
+import Service from './ServiceCard.jsx';
+import { useServices } from './useServices.jsx';
+import { useServiceMutations } from './useServiceMutations.jsx';
+import ServiceForm from './ServiceForm.jsx';
 
 const ServiceSect = ({ isAdmin = false }) => {
   const { isOpen: formOpen, editData } = useSelector((state) => state.modals.serviceForm);

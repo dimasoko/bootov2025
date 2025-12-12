@@ -1,10 +1,9 @@
 import React from 'react';
 import { useProfile } from '../../contexts/ProfileContext';
-import './ProfilePage.module.css';
 import { Link } from 'react-router-dom';
 
 
-export default function ProfilePage() {
+export default function Profile() {
   const { 
     userName, 
     visits, 

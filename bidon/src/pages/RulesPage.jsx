@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import PageName from '../components/Text/PageName';
 import TextBlock from '../components/Text/TextBlock';
 
-const Rules = () => {
+const RulesPage = () => {
   return (
     <div>
       <Header />
@@ -21,4 +21,4 @@ const Rules = () => {
   );
 };
 
-export default Rules; 
+export default RulesPage; 

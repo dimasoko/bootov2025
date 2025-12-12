@@ -1,5 +1,4 @@
-import React from 'react';
-import styles from './FeatureSections.module.css';
+import styles from './FeatureSection.module.css';
 
 const FeatureSection = () => {
   return (

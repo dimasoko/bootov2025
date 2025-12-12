@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import PageName from '../components/Text/PageName';
 import BookingForm from '../components/BookingForm/BookingForm';
 
-const Booking = () => {
+const BookingPage = () => {
     return (
       <div>
           <Header />
@@ -14,4 +14,4 @@ const Booking = () => {
     );
   };
   
-  export default Booking;
+  export default BookingPage;

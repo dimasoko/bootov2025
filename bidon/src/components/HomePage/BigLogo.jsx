@@ -1,7 +1,6 @@
-import React from 'react';
-import styles from './Screaming.module.css';
+import styles from './BigLogo.module.css';
 
-const Screaming = () => {
+const BigLogo = () => {
   return (
     <screaming className={styles.screaming}>
       <div className={styles.logo}>
@@ -14,4 +13,4 @@ const Screaming = () => {
   );
 };
 
-export default Screaming;
+export default BigLogo;

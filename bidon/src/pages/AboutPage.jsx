@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import PageName from '../components/Text/PageName';
 import TextBlock from '../components/Text/TextBlock';
 
-const AboutUs = () => {
+const AboutPage = () => {
   return (
     <div>
       <Header />
@@ -18,4 +18,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs; 
+export default AboutPage; 

@@ -1,9 +1,9 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import PageName from '../components/Text/PageName';
-import ProfilePage from '../components/ProfilePage/ProfilePage';
+import Profile from '../components/Profile/Profile';
 
-const Profile = () => {
+const ProfilePage = () => {
   return (
     <div>
       <Header />
@@ -14,4 +14,4 @@ const Profile = () => {
   );
 };
 
-export default Profile; 
+export default ProfilePage; 

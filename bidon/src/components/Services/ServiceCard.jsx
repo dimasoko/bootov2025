@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Service.module.css';
+import styles from './ServiceCard.module.css';
 
-const Service = ({ id, image, title, description, price, isAdmin, onEdit, onDelete }) => {
+const ServiceCard = ({ id, image, title, description, price, isAdmin, onEdit, onDelete }) => {
   return (
     <div className={styles.card}>
       <img src={`http://localhost:5000${image}`} alt="Услуга" className={styles.image} />
@@ -27,4 +27,4 @@ const Service = ({ id, image, title, description, price, isAdmin, onEdit, onDele
   );
 };
 
-export default Service;
+export default ServiceCard;

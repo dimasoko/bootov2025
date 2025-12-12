@@ -3,7 +3,7 @@ import PageName from '../components/Text/PageName';
 import Footer from '../components/Footer';
 import NewsSect from '../components/News/NewsSect';
 
-const News = ({ isAdmin = false }) => {
+const NewsPage = ({ isAdmin = false }) => {
   return (
     <>
       <Header />
@@ -14,4 +14,4 @@ const News = ({ isAdmin = false }) => {
   );
 };
 
-export default News;
+export default NewsPage;
