@@ -1,0 +1,12 @@
+.iwanna {
+    margin: 20% 30% 20% 30%;
+    opacity: 0.1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

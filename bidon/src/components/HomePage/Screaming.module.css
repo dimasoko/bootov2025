@@ -1,0 +1,41 @@
+.screaming {
+    background-color: rgba(246, 164, 142, 0.75);
+    transform: skewX(150deg);
+    margin: 5% 15% 5% 23%;
+    padding: 1% 5% 1% 5%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 55%;
+    height: 15%;
+}
+
+.logo {
+    transform: skewX(-150deg);
+    margin-right: 5%;
+}
+
+.screamingText h1 {
+    transform: skewX(-150deg);
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 300%;
+    font-style: normal;
+}
+
+@media (max-width: 480px) {
+    .screaming {
+        width: 55%;
+        margin: 5% 15% 5% 15%;
+    }
+    .logo {
+        display: none;
+    }
+    .screamingText {
+        font-size: 70%;
+    }
+}

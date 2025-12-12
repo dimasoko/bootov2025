@@ -1,0 +1,17 @@
+.container { /* [[3]] */
+    background-color: rgba(84, 115, 118, 0.7); 
+    border-radius: 30px; /* [[3]] */
+    padding: 20px; /* [[4]] Отступы внутри */
+    margin: 0 5%; /* [[4]] Отступы снаружи */
+  }
+  
+.text { /* [[5]] */
+    margin-bottom: 15px; /* [[4]] Абзацный отступ */
+    color: white; /* [[3]] */
+    line-height: 1.6; /* [[4]] */
+    text-indent: 2%;
+}
+
+p {
+  font-size: large;
+}

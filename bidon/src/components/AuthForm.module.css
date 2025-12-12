@@ -1,0 +1,237 @@
+.authContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  }
+  
+  .toggleButtons {
+  display: flex;
+  background-color: #CF8976;
+  border-radius: 50px;
+  overflow: hidden;
+  width: 200px;
+  margin-bottom: 30px;
+  }
+  
+  .toggleButtons button {
+  border-radius: 50px;
+  flex: 1;
+  padding: 20px 0;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  }
+  
+  .toggleButtons button.active {
+  background-color: #F6A48E;
+  color: black;
+  }
+  
+  .formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  }
+  
+  .formBox {
+  background-color: rgba(84, 115, 118, 0.7);
+  border-radius: 50px;
+  padding: 40px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  }
+  
+  /* === РАСКЛАДКА ДЛЯ РЕГИСТРАЦИИ === */
+  .formBox.register {
+  display: flex;
+  flex-direction: column; /* колонки из рядов */
+  gap: 15px; /* отступ между рядами */
+  width: 600px; /* подогнать под ваш макет */
+  }
+  
+  /* Ряд из двух полей */
+  .row {
+  display: flex; /* два поля в одну строку */
+  gap: 15px; /* межполосный отступ */
+  }
+  
+  /* Каждая обёртка поля растягивается одинаково */
+  .row .inputGroup {
+  flex: 1;
+  }
+  
+  /* Общие стили для поля и обёртки */
+  .inputGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  }
+  
+  .inputField,
+  .inputHalf,
+  .inputFull {
+  border: none;
+  border-radius: 30px;
+  padding: 10px 14px;
+  background-color: #e3f2ee;
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  width: 100%; /* чтобы инпут занимал всю ширину обёртки */
+  }
+  
+  /* Последнее поле (inputFull) — на всю ширину формы */
+  .formBox.register > .inputGroup {
+  width: 100%;
+  }
+  
+  /* Лейбл и ошибки */
+  .inputLabel {
+  font-size: 12px;
+  color: #fff;
+  margin-top: 5px;
+  text-indent: 15px;
+  }
+  
+  .error {
+  font-size: 12px;
+  color: #ff6b6b;
+  margin-top: 4px;
+  }
+  
+  /* Кнопка отправки */
+  .submitButton {
+  background-color: #f3b4a6;
+  border: none;
+  border-radius: 50px;
+  padding: 20px 50px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #4a4a4a;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover {
+  background-color: #e9a993;
+  }
+  
+  .forgotPassword {
+  font-size: 12px;
+  color: #a6b5b1;
+  text-decoration: underline;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  }
+
+.inputHalf[type="date"]::-webkit-datetime-edit,
+.inputHalf[type="date"]::-webkit-datetime-edit-text,
+.inputHalf[type="date"]::-webkit-datetime-edit-day-field,
+.inputHalf[type="date"]::-webkit-datetime-edit-month-field,
+.inputHalf[type="date"]::-webkit-datetime-edit-year-field,
+.inputFull[type="date"]::-webkit-datetime-edit,
+.inputFull[type="date"]::-webkit-datetime-edit-text,
+.inputFull[type="date"]::-webkit-datetime-edit-day-field,
+.inputFull[type="date"]::-webkit-datetime-edit-month-field,
+.inputFull[type="date"]::-webkit-datetime-edit-year-field {
+  color: #333333;
+  opacity: 0.8;
+}
+
+/* WebKit: разделители */
+.inputHalf[type="date"]::-webkit-datetime-edit-separator,
+.inputFull[type="date"]::-webkit-datetime-edit-separator {
+  color: #333333;
+  opacity: 0.8;
+}
+
+/* WebKit: календарная иконка */
+.inputHalf[type="date"]::-webkit-calendar-picker-indicator,
+.inputFull[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+  opacity: 0;
+}
+
+/* Прочие: Firefox, Edge */
+.inputHalf[type="date"],
+.inputFull[type="date"] {
+  color: #333333;
+  /* color-scheme для инверсии иконки */
+  color-scheme: dark;
+}
+
+/* === Адаптивность для планшетов и небольших экранов === */
+@media (max-width: 768px) {
+  .authContainer {
+    padding: 20px 10px;
+  }
+
+  .toggleButtons {
+    width: 100%;
+  }
+
+  .formBox {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .formBox.register {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .row {
+    gap: 10px;
+  }
+
+  /* По две колонки, но уже чуть уже */
+  .row .inputGroup {
+    flex: 0 0 calc((100% - 10px) / 2);
+  }
+
+  .submitButton {
+    padding: 10px 30px;
+  }
+}
+
+/* === Адаптивность для узких экранов телефонов === */
+@media (max-width: 480px) {
+  .toggleButtons {
+    width: 100%;
+  }
+
+  .formBox {
+    padding: 20px;
+  }
+
+  /* Ряды превращаем в одну колонку */
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Каждое поле теперь 100% ширины */
+  .row .inputGroup {
+    flex: 0 0 100%;
+  }
+
+  /* Поле full тоже занимает всю ширину автоматически */
+  .formBox.register > .inputGroup {
+    width: 100%;
+  }
+
+  .submitButton {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+  }
+}

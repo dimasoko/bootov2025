@@ -1,0 +1,32 @@
+.section {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12%;
+    margin-top: 30px;
+  }
+
+.addBtn {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 24px;
+  background-color: rgba(84, 115, 118, 0.7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.addBtn:hover {
+  background-color: rgb(84, 115, 118);
+  transform: translateY(-2px);
+}

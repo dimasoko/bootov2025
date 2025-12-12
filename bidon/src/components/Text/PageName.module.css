@@ -1,0 +1,41 @@
+.pageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+ }
+  
+  /* Основной контейнер, зависящий от размеров текста */
+  .textContainer {
+    position: relative;
+    display: inline-block;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 200%;
+    font-style: normal;
+  }
+  
+  /* Фоновый слой. SVG-картинка будет растянута до 120% ширины контейнера */
+  .svglayer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  
+  /* Сама картинка занимает всю ширину родителя */
+  .svglayer img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Текст остается поверх фонового изображения и центрируется */
+  .textcontent {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 0.5em;
+  }
