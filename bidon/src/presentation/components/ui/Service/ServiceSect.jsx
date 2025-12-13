@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { openServiceForm, closeServiceForm } from '../.../../infrastructure/store/slices/modalsSlice.js';
+import { openServiceForm, closeServiceForm } from '../../../../infrastructure/store/slices/modalsSlice.js';
 import styles from './ServiceSect.module.css';
 import Service from './ServiceCard.jsx';
 import { useServices } from './useServices.jsx';

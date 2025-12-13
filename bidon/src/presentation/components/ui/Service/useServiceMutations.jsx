@@ -1,5 +1,5 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { addService, updateService, deleteService } from '../.../../infrastructure/api/services';
+import { addService, updateService, deleteService } from '../../../../infrastructure/api/services';
 
 export const useServiceMutations = () => {
   const queryClient = useQueryClient();
