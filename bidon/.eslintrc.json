@@ -1,0 +1,128 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/recommended",
+    "prettier"
+  ],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "jsx-a11y",
+    "import",
+    "prettier"
+  ],
+  "rules": {
+    // Prettier интеграция
+    "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
+
+    // React правила
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "warn",
+    "react/jsx-uses-react": "off",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-no-duplicate-props": "error",
+    "react/jsx-pascal-case": ["error", {
+      "allowAllCaps": false,
+      "ignore": []
+    }],
+
+    // React Hooks правила
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+
+    // Naming conventions
+    "camelcase": ["error", {
+      "properties": "always",
+      "ignoreDestructuring": false,
+      "ignoreImports": false,
+      "ignoreGlobals": false
+    }],
+
+    // Import/Export правила
+    "import/order": ["error", {
+      "groups": [
+        "builtin",
+        "external",
+        "internal",
+        ["parent", "sibling"],
+        "index"
+      ],
+      "newlines-between": "always",
+      "alphabetize": {
+        "order": "asc",
+        "caseInsensitive": true
+      }
+    }],
+    "import/no-unresolved": "off",
+    "import/named": "error",
+    "import/default": "error",
+    "import/no-duplicates": "error",
+
+    // Общие правила качества кода
+    "no-console": "warn",
+    "no-unused-vars": ["error", {
+      "vars": "all",
+      "args": "after-used",
+      "ignoreRestSiblings": true,
+      "argsIgnorePattern": "^_"
+    }],
+    "no-debugger": "error",
+    "no-alert": "warn",
+    "no-var": "error",
+    "prefer-const": "error",
+    "prefer-arrow-callback": "error",
+    "arrow-body-style": ["error", "as-needed"],
+    "no-duplicate-imports": "error",
+    "eqeqeq": ["error", "always"],
+    "curly": ["error", "all"],
+    "no-nested-ternary": "warn",
+    "max-depth": ["warn", 4],
+    "max-lines-per-function": ["warn", {
+      "max": 100,
+      "skipBlankLines": true,
+      "skipComments": true
+    }],
+
+    // Accessibility
+    "jsx-a11y/anchor-is-valid": "warn",
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "jsx-a11y/no-static-element-interactions": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
+  "ignorePatterns": [
+    "node_modules/",
+    "build/",
+    "dist/",
+    "coverage/",
+    "*.config.js"
+  ]
+}
